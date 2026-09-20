@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main() {
+   
+   float a , b , c;
+   float delt ,  rx ,ry;
+  
+
+   
+   
+   cout << "digite o valor de A:";
+   cin >> a;
+   ////////////////////////////////////////////////
+      if (a == 0 ) {
+          cout << "nao e uma do segudno graul";
+          return 0;
+   ////////////////////////////////////////////////    
+   }
+   cout << "valor de B:";
+   cin >> b;
+   cout << "valor de c:";
+   cin >> c;
+   ////////////////////////////////////////////////
+    delt = (b * b ) - (4 * a * c);
+    rx = (-b + (delt * delt) ) / (2 * a);
+    ry = (-b - (delt * delt) ) / (2 * a);
+   ////////////////////////////////////////////////
+    if (delt <! 1 ){
+        cout << "a equação não possui raízes reais";
+    }
+   
+      else if (delt == 0) {
+          cout << "possui apenas uma raiz real : " << rx ;
+      }
+   else {
+       cout << " possui duas raiz reais:" << rx , ry;
+   }
+   
+   
+}
